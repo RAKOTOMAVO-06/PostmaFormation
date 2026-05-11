@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "f1058a5f-49f8-4aa5-842b-8a7b339e56b8",
+		"name": "API-Formation-J1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "GetAllUsers",
+					"id": "aed3bfd8-b0a2-42ba-92f1-3f732e999f45",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base-url}}/users?skip=50&limit=100",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"users"
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "50"
+								},
+								{
+									"key": "limit",
+									"value": "100"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetUserId",
+					"id": "dd6e0b2a-9777-4081-8f18-62d5ee3cfca8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{base-url}}/users/{{userId}}"
+					},
+					"response": []
+				}
+			],
+			"id": "9f572546-961e-4054-9578-0c12cd5a7e4f"
+		},
+		{
+			"name": "Posts",
+			"item": [],
+			"id": "62d1297a-ab1e-4d32-96ce-0d4c8a0404af"
+		},
+		{
+			"name": "Mock",
+			"item": [],
+			"id": "65080e5b-f50b-4c12-a8c3-2cebc22cd93e"
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "1098656a-e188-44b9-997c-3c135f4f1e86",
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "3e955e11-c71c-4fc4-986d-092a73395c43",
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
