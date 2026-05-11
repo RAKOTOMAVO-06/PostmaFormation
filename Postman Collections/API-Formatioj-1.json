@@ -18,7 +18,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base-url}}/users?skip=50&limit=100",
+							"raw": "{{base-url}}/users?skip=50&limit=101",
 							"host": [
 								"{{base-url}}"
 							],
@@ -32,7 +32,7 @@
 								},
 								{
 									"key": "limit",
-									"value": "100"
+									"value": "101"
 								}
 							]
 						}
