@@ -71,7 +71,7 @@
 								}
 							}
 						},
-						"url": "{{base-url}}/posts"
+						"url": "{{base-url}}/posts{{post_pad}}"
 					},
 					"response": []
 				}
