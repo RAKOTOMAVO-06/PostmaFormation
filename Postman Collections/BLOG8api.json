@@ -224,13 +224,44 @@
 				},
 				{
 					"name": "RequréréToken",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3ddfcfe2-fd79-477a-8b4f-871dfe873953",
+								"exec": [
+									"//vérifier que la requête\r",
+									"pm.test(\"Status code is 200\", function () {pm.response.to.have.status(200);});\r",
+									"//Extraire le token d'accès de la réponse\r",
+									"const responsJson=pm.response.json();\r",
+									"\r",
+									"// Sauvegarder dans lavariable d'environnement\r",
+									"pm.environment.set(\"Access_token\", responsJson.accessToken);\r",
+									"console.log(\"Token d'accès enregistré : \" + responsJson.accessToken);\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
 					"id": "f5b32cf4-3341-4ce4-8f76-0a87c259ea16",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
+						"method": "POST",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"elib\",\r\n    \"password\": \"elibpass\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": "{{base-url}}/auth/login"
 					},
 					"response": []
