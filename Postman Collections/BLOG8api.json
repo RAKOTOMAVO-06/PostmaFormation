@@ -9,7 +9,7 @@
 			"name": "Postes",
 			"item": [
 				{
-					"name": "GEtAll",
+					"name": "Postes_Recherche_All",
 					"id": "75e85788-4b2a-4d71-a36c-6a413dc4ac1f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -22,7 +22,7 @@
 					"response": []
 				},
 				{
-					"name": "GETPOSTID",
+					"name": "Postes_Recherche_ID",
 					"id": "ab0e6e11-8d11-44c2-9679-69394255a0ab",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -172,7 +172,7 @@
 					"response": []
 				},
 				{
-					"name": "GetID",
+					"name": "Rechercher_Utilisateur_Todo_Id",
 					"id": "eec00b3e-c435-4fe5-ab68-aca2f84f0b59",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
