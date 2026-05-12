@@ -395,7 +395,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "a3c9c7aa-7b6d-41bc-8fc6-6df58397f4fc",
+				"id": "c275b122-db02-4f4e-bc93-ce78bd0f4179",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -407,7 +407,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "e2ee7193-4bf7-40c9-9a4c-f6562315ecca",
+				"id": "e0270e77-b9ae-4763-8c37-d89ab6f23977",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -420,6 +420,10 @@
 	"variable": [
 		{
 			"key": "key_API_Meteo",
+			"value": ""
+		},
+		{
+			"key": "Acces_Token_C",
 			"value": ""
 		}
 	]
