@@ -189,7 +189,20 @@
 		},
 		{
 			"name": "Auth",
-			"item": [],
+			"item": [
+				{
+					"name": "Météo",
+					"id": "8b992e7c-30aa-40b8-b947-b7e2a09da641",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
 			"id": "0e21cb62-35b4-48ee-9504-f9c330559066"
 		},
 		{
@@ -248,11 +261,18 @@
 			"id": "65080e5b-f50b-4c12-a8c3-2cebc22cd93e"
 		}
 	],
+	"auth": {
+		"type": "apikey",
+		"apikey": {
+			"value": "{{key_API}}",
+			"key": "X_API_KEY"
+		}
+	},
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "5dd6e780-2a08-49df-a427-206f4e2752fb",
+				"id": "bd2b6ad3-1649-4b86-8127-bdb1bfe627c7",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -264,7 +284,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "fa2cbad6-456d-4f80-9f4f-7fda7fe40bb8",
+				"id": "9d79d3f3-91c1-4a1e-bbd7-25d06685d61c",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -272,6 +292,12 @@
 					""
 				]
 			}
+		}
+	],
+	"variable": [
+		{
+			"key": "key_API",
+			"value": ""
 		}
 	]
 }
