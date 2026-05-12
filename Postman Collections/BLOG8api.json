@@ -150,7 +150,7 @@
 								}
 							}
 						},
-						"url": "{{base-url}}/todos/2"
+						"url": "{{base-url}}/todos/{{todo_id}}"
 					},
 					"response": []
 				},
@@ -207,7 +207,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{base-url}}/todos/2"
+						"url": "{{base-url}}/todos/{{todo_id}}"
 					},
 					"response": []
 				},
