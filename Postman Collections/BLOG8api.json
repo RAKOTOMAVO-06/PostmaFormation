@@ -9,7 +9,7 @@
 			"name": "Posts",
 			"item": [
 				{
-					"name": "Postes_Recherche_All",
+					"name": "Posts_Recherche_All",
 					"id": "75e85788-4b2a-4d71-a36c-6a413dc4ac1f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -40,7 +40,7 @@
 					"response": []
 				},
 				{
-					"name": "Postes_Recherche_All_KO",
+					"name": "Posts_Recherche_All_KO",
 					"id": "d81b7cd8-3b92-4aba-9cce-e0eb1608262f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -152,6 +152,28 @@
 				{
 					"name": "Posts_supprimer__Element",
 					"id": "1fa1cf0a-4781-4449-be85-ab616c96e60d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{  \r\n    \"title\": \"Toto3.\",\r\n    \"body\": \" C'est bien ça.\",\r\n    \"views\": 4888,\r\n    \"userId\": 91\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base-url}}/Post/99"
+					},
+					"response": []
+				},
+				{
+					"name": "Posts_supprimer__Element Copy",
+					"id": "4b299845-89ba-449c-8ef7-f18e3bf5580d",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
