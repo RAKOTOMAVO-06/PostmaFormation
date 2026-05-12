@@ -338,17 +338,16 @@
 		}
 	],
 	"auth": {
-		"type": "apikey",
-		"apikey": {
-			"key": "X-API-Key",
-			"value": "{{key_API_Meteo}}"
+		"type": "bearer",
+		"bearer": {
+			"token": "{{Access_Token}}"
 		}
 	},
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "bbf8d3c5-fb1b-45ca-86c6-a0fc9fd21834",
+				"id": "a3c9c7aa-7b6d-41bc-8fc6-6df58397f4fc",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -360,7 +359,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "44a47593-8398-49b2-97fe-1fb4037769e7",
+				"id": "e2ee7193-4bf7-40c9-9a4c-f6562315ecca",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
