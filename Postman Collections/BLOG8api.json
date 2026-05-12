@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "Postes",
+			"name": "Posts",
 			"item": [
 				{
 					"name": "Postes_Recherche_All",
@@ -17,7 +17,56 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "{{base-url}}/posts"
+						"url": {
+							"raw": "{{base-url}}/posts?limit={{Limite_}}&skip={{skip_}}",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"posts"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "{{Limite_}}"
+								},
+								{
+									"key": "skip",
+									"value": "{{skip_}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Postes_Recherche_All_KO",
+					"id": "d81b7cd8-3b92-4aba-9cce-e0eb1608262f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base-url}}/posts?limit=u&skip=v",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"posts"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "u"
+								},
+								{
+									"key": "skip",
+									"value": "v"
+								}
+							]
+						}
 					},
 					"response": []
 				},
