@@ -341,9 +341,9 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
+						"method": "DELETE",
 						"header": [],
-						"url": "{{base-url}}/todos/{{todo_id}}"
+						"url": "{{base-url}}/todos/80"
 					},
 					"response": []
 				}
