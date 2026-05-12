@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "Get",
+			"name": "Postes",
 			"item": [
 				{
 					"name": "GEtAll",
@@ -46,13 +46,7 @@
 						"url": "{{base-url}}/posts/{{post_id}}/comments"
 					},
 					"response": []
-				}
-			],
-			"id": "00fa963b-623e-4b2d-b550-950cc56ab4f7"
-		},
-		{
-			"name": "Post",
-			"item": [
+				},
 				{
 					"name": "Post1",
 					"id": "a137f179-3766-4c01-985c-5bcd5fb18fdd",
@@ -76,10 +70,10 @@
 					"response": []
 				}
 			],
-			"id": "3e46143e-32c0-4c7b-b0af-1b768f577d42"
+			"id": "00fa963b-623e-4b2d-b550-950cc56ab4f7"
 		},
 		{
-			"name": "TODO",
+			"name": "Todos",
 			"item": [
 				{
 					"name": "Getall",
@@ -247,11 +241,6 @@
 				}
 			],
 			"id": "9f572546-961e-4054-9578-0c12cd5a7e4f"
-		},
-		{
-			"name": "Posts",
-			"item": [],
-			"id": "62d1297a-ab1e-4d32-96ce-0d4c8a0404af"
 		},
 		{
 			"name": "Mock",
