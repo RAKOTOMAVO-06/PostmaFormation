@@ -35,6 +35,19 @@
 					"response": []
 				},
 				{
+					"name": "Postes_Recherche_ID Copy",
+					"id": "8bbd7f60-40ef-49a2-b3ea-d79e8e4b3d06",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{base-url}}/posts/{{post_id}}"
+					},
+					"response": []
+				},
+				{
 					"name": "GetPostComments",
 					"id": "28e091db-97e0-4169-b50e-91bc44c778f3",
 					"protocolProfileBehavior": {
