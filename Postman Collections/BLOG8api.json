@@ -333,6 +333,19 @@
 						"url": "{{base-url}}/todos/{{todo_id}}"
 					},
 					"response": []
+				},
+				{
+					"name": "Supprimer_Utilisateur_Todo_Id",
+					"id": "4584ea96-96f1-4692-ba39-9b800916cfe2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{base-url}}/todos/{{todo_id}}"
+					},
+					"response": []
 				}
 			],
 			"id": "ff828903-f111-40ce-8955-3f68be6b985b"
