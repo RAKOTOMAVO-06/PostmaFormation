@@ -319,7 +319,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    {{title}}: \"voila\",\r\n    \"completed\": true,\r\n    \"userId\": 2\r\n    \r\n\r\n\r\n}",
+							"raw": "{\r\n    {{title}}: \"voila111\",\r\n    \"completed\": true,\r\n    \"userId\": 2\r\n    \r\n\r\n\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -467,7 +467,8 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": "{{base-url}}/auth/me"
 							},
 							"response": []
 						}
