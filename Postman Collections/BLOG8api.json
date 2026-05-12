@@ -236,8 +236,9 @@
 									"const responsJson=pm.response.json();\r",
 									"\r",
 									"// Sauvegarder dans lavariable d'environnement\r",
-									"pm.environment.set(\"Access_token\", responsJson.accessToken);\r",
-									"console.log(\"Token d'accès enregistré : \" + responsJson.accessToken);\r",
+									"pm.environment.set(\"Access_Token\", responsJson.accessToken);\r",
+									"console.log(\"Token d'accès enregistré : \\n\" + responsJson.accessToken);\r",
+									"console.log(\"voici ma variable\\n\"+pm.environment.get(\"base-url\")\r",
 									""
 								],
 								"type": "text/javascript",
