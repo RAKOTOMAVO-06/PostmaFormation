@@ -234,6 +234,18 @@
 						"url": "{{base-url}}/auth/login"
 					},
 					"response": []
+				},
+				{
+					"name": "Donner_mafiche",
+					"id": "5cf79e85-ccfb-48ba-a1c4-6a8baafa3d75",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "0e21cb62-35b4-48ee-9504-f9c330559066"
