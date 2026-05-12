@@ -9,7 +9,7 @@
 			"name": "Posts",
 			"item": [
 				{
-					"name": "Posts_Recherche_All",
+					"name": "Posts_Rechercher_All",
 					"id": "75e85788-4b2a-4d71-a36c-6a413dc4ac1f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -40,7 +40,7 @@
 					"response": []
 				},
 				{
-					"name": "Posts_Recherche_All_KO",
+					"name": "Posts_Rechercher_All_KO",
 					"id": "d81b7cd8-3b92-4aba-9cce-e0eb1608262f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -71,7 +71,7 @@
 					"response": []
 				},
 				{
-					"name": "Posts_Recherche_ID",
+					"name": "Posts_Rechercher_ID",
 					"id": "ab0e6e11-8d11-44c2-9679-69394255a0ab",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -194,7 +194,7 @@
 					"response": []
 				},
 				{
-					"name": "Posts_Recherche_ID_KO",
+					"name": "Posts_Rechercher_ID_KO",
 					"id": "8bbd7f60-40ef-49a2-b3ea-d79e8e4b3d06",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -207,7 +207,7 @@
 					"response": []
 				},
 				{
-					"name": "Recherche PostComments",
+					"name": "Posts_Rechercher_Comments_ID",
 					"id": "28e091db-97e0-4169-b50e-91bc44c778f3",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
