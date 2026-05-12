@@ -117,9 +117,18 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
+						"method": "POST",
 						"header": [],
-						"url": "{{base-url}}/todos/{{toto_id}}"
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"todo\": \"voila\",\r\n    \"completed\": true,\r\n    \"userId\": 300\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base-url}}/todos/{{post_pad}}"
 					},
 					"response": []
 				},
