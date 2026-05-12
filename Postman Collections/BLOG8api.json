@@ -150,6 +150,28 @@
 					"response": []
 				},
 				{
+					"name": "Posts_supprimer__Element",
+					"id": "1fa1cf0a-4781-4449-be85-ab616c96e60d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{  \r\n    \"title\": \"Toto3.\",\r\n    \"body\": \" C'est bien ça.\",\r\n    \"views\": 4888,\r\n    \"userId\": 91\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base-url}}/Post/99"
+					},
+					"response": []
+				},
+				{
 					"name": "Postes_Recherche_ID_KO",
 					"id": "8bbd7f60-40ef-49a2-b3ea-d79e8e4b3d06",
 					"protocolProfileBehavior": {
