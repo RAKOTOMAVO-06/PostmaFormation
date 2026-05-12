@@ -76,7 +76,7 @@
 			"name": "Todos",
 			"item": [
 				{
-					"name": "Rechercher_TODO_ALL",
+					"name": "Rechercher_TODO_tous_uUtilisateur",
 					"id": "ed66907c-6e53-400d-ab1c-371cf5251aa1",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -93,7 +93,7 @@
 					"response": []
 				},
 				{
-					"name": "Crrer_TOTO_Utilisateur",
+					"name": "Creer_TOTO_Utilisateur",
 					"id": "2a0b5c15-bccd-4017-8a30-f7838d13774a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -115,7 +115,7 @@
 					"response": []
 				},
 				{
-					"name": "PUT",
+					"name": "Mofifier_ Utilisateur_Tout_TODO_ID",
 					"id": "51b5accc-d3e4-4164-a269-ca00f6784a98",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -137,7 +137,7 @@
 					"response": []
 				},
 				{
-					"name": "PATCH",
+					"name": "Modifier_Partiel_Utilisateur_Todo",
 					"id": "c65eeae3-7cc4-41f9-b64a-f1d7795ecba5",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -159,7 +159,7 @@
 					"response": []
 				},
 				{
-					"name": "Delete",
+					"name": "Supprimer_Utilisateur_Todo",
 					"id": "461de7b0-e0b5-40ac-b198-63f9fac1cd76",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
