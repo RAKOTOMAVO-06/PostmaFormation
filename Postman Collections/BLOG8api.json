@@ -106,7 +106,7 @@
 					"response": []
 				},
 				{
-					"name": "Posts_modifier_tout_Element",
+					"name": "Posts_modifier_complet_Element",
 					"id": "d5255b15-5941-42aa-bc31-6f89cdccf8ab",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -469,42 +469,6 @@
 						}
 					],
 					"id": "02ef2903-7375-4892-b89d-e41565a71ac9"
-				},
-				{
-					"name": "Posts_CRud",
-					"item": [],
-					"id": "569a5777-e5f1-4f79-a7f0-29e0f314070c"
-				},
-				{
-					"name": "GetAllUsers Copy",
-					"id": "5111f937-e116-4c8c-8dbf-fcad09aebd65",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{base-url}}/users?skip=50&limit=101",
-							"host": [
-								"{{base-url}}"
-							],
-							"path": [
-								"users"
-							],
-							"query": [
-								{
-									"key": "skip",
-									"value": "50"
-								},
-								{
-									"key": "limit",
-									"value": "101"
-								}
-							]
-						}
-					},
-					"response": []
 				}
 			],
 			"id": "0e21cb62-35b4-48ee-9504-f9c330559066"
