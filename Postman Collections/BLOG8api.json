@@ -104,6 +104,19 @@
 						"header": []
 					},
 					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "2a0b5c15-bccd-4017-8a30-f7838d13774a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{base-url}}/todos/{{toto_id}}"
+					},
+					"response": []
 				}
 			],
 			"id": "ff828903-f111-40ce-8955-3f68be6b985b"
