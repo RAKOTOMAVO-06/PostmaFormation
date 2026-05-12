@@ -74,18 +74,6 @@
 						"url": "{{base-url}}/posts{{post_pad}}"
 					},
 					"response": []
-				},
-				{
-					"name": "New Request",
-					"id": "058f8eea-e6e2-49d9-8ce5-1183a35fadea",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": []
-					},
-					"response": []
 				}
 			],
 			"id": "3e46143e-32c0-4c7b-b0af-1b768f577d42"
@@ -204,6 +192,71 @@
 				}
 			],
 			"id": "ff828903-f111-40ce-8955-3f68be6b985b"
+		},
+		{
+			"name": "Auth",
+			"item": [],
+			"id": "0e21cb62-35b4-48ee-9504-f9c330559066"
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "GetAllUsers",
+					"id": "aed3bfd8-b0a2-42ba-92f1-3f732e999f45",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base-url}}/users?skip=50&limit=101",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"users"
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "50"
+								},
+								{
+									"key": "limit",
+									"value": "101"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetUserId",
+					"id": "dd6e0b2a-9777-4081-8f18-62d5ee3cfca8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{base-url}}/users/{{userId}}"
+					},
+					"response": []
+				}
+			],
+			"id": "9f572546-961e-4054-9578-0c12cd5a7e4f"
+		},
+		{
+			"name": "Posts",
+			"item": [],
+			"id": "62d1297a-ab1e-4d32-96ce-0d4c8a0404af"
+		},
+		{
+			"name": "Mock",
+			"item": [],
+			"id": "65080e5b-f50b-4c12-a8c3-2cebc22cd93e"
 		}
 	],
 	"event": [
