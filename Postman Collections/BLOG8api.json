@@ -183,7 +183,7 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "POST",
+						"method": "PATCH",
 						"header": [],
 						"body": {
 							"mode": "raw",
@@ -194,7 +194,7 @@
 								}
 							}
 						},
-						"url": "{{base-url}}/todos/{{post_pad}}"
+						"url": "{{base-url}}/todos/2"
 					},
 					"response": []
 				},
