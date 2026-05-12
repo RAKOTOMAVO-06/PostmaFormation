@@ -133,6 +133,28 @@
 					"response": []
 				},
 				{
+					"name": "PUT",
+					"id": "51b5accc-d3e4-4164-a269-ca00f6784a98",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    {{title}}: \"voila\",\r\n    \"completed\": true,\r\n    \"userId\": 2,\r\n    \"id\": 6\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base-url}}/todos/{{post_pad}}"
+					},
+					"response": []
+				},
+				{
 					"name": "GetID",
 					"id": "eec00b3e-c435-4fe5-ab68-aca2f84f0b59",
 					"protocolProfileBehavior": {
