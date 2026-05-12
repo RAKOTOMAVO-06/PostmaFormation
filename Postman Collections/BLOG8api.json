@@ -198,7 +198,27 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "https://api.openweathermap.org/data/2.5/weather?q=London,uk",
+							"protocol": "https",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "London,uk"
+								}
+							]
+						}
 					},
 					"response": []
 				}
@@ -264,7 +284,7 @@
 	"auth": {
 		"type": "apikey",
 		"apikey": {
-			"key": "X_API_Key",
+			"key": "X-API-Key",
 			"value": "{{key_API_Meteo}}"
 		}
 	},
@@ -272,7 +292,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "cdf14441-ed33-485f-b1a7-2f2ce7efef30",
+				"id": "bbf8d3c5-fb1b-45ca-86c6-a0fc9fd21834",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -284,7 +304,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "b49369bc-55c1-4f02-bda6-13c6b6f37b8c",
+				"id": "44a47593-8398-49b2-97fe-1fb4037769e7",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
