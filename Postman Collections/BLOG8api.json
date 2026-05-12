@@ -192,133 +192,98 @@
 			"item": [
 				{
 					"name": "Init",
-					"item": [],
-					"id": "02ef2903-7375-4892-b89d-e41565a71ac9"
-				},
-				{
-					"name": "Météo",
-					"id": "8b992e7c-30aa-40b8-b947-b7e2a09da641",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://api.openweathermap.org/data/2.5/weather?q=London,uk",
-							"protocol": "https",
-							"host": [
-								"api",
-								"openweathermap",
-								"org"
-							],
-							"path": [
-								"data",
-								"2.5",
-								"weather"
-							],
-							"query": [
-								{
-									"key": "q",
-									"value": "London,uk"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "RequréréToken",
-					"event": [
+					"item": [
 						{
-							"listen": "test",
-							"script": {
-								"id": "3ddfcfe2-fd79-477a-8b4f-871dfe873953",
-								"exec": [
-									"//vérifier que la requête\r",
-									"pm.test(\"Status code is 200\", function () {pm.response.to.have.status(200);});\r",
-									"//Extraire le token d'accès de la réponse\r",
-									"const responsJson=pm.response.json();\r",
-									"\r",
-									"// Sauvegarder dans lavariable d'environnement\r",
-									"pm.environment.set(\"Access_Token\", responsJson.accessToken);\r",
-									"console.log(\"Token d'accès enregistré : \\n\" + responsJson.accessToken);\r",
-									"console.log(\"voici ma variable\\n\"+pm.environment.get(\"base-url\")\r",
-									""
-								],
-								"type": "text/javascript",
-								"packages": {},
-								"requests": {}
-							}
+							"name": "Météo",
+							"id": "8b992e7c-30aa-40b8-b947-b7e2a09da641",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.openweathermap.org/data/2.5/weather?q=London,uk",
+									"protocol": "https",
+									"host": [
+										"api",
+										"openweathermap",
+										"org"
+									],
+									"path": [
+										"data",
+										"2.5",
+										"weather"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "London,uk"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "RequréréToken",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "3ddfcfe2-fd79-477a-8b4f-871dfe873953",
+										"exec": [
+											"//vérifier que la requête\r",
+											"pm.test(\"Status code is 200\", function () {pm.response.to.have.status(200);});\r",
+											"//Extraire le token d'accès de la réponse\r",
+											"const responsJson=pm.response.json();\r",
+											"\r",
+											"// Sauvegarder dans lavariable d'environnement\r",
+											"pm.environment.set(\"Access_Token\", responsJson.accessToken);\r",
+											"console.log(\"Token d'accès enregistré : \\n\" + responsJson.accessToken);\r",
+											"console.log(\"voici ma variable\\n\"+pm.environment.get(\"base-url\")\r",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								}
+							],
+							"id": "f5b32cf4-3341-4ce4-8f76-0a87c259ea16",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"elib\",\r\n    \"password\": \"elibpass\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{base-url}}/auth/login"
+							},
+							"response": []
+						},
+						{
+							"name": "Donner_mafiche",
+							"id": "5cf79e85-ccfb-48ba-a1c4-6a8baafa3d75",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
-					"id": "f5b32cf4-3341-4ce4-8f76-0a87c259ea16",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"username\": \"elib\",\r\n    \"password\": \"elibpass\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{base-url}}/auth/login"
-					},
-					"response": []
-				},
-				{
-					"name": "Donner_mafiche",
-					"id": "5cf79e85-ccfb-48ba-a1c4-6a8baafa3d75",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": []
-					},
-					"response": []
-				},
-				{
-					"name": "New Request",
-					"id": "667a5d09-458a-4810-b62a-7a2dd9324f01",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": []
-					},
-					"response": []
-				},
-				{
-					"name": "New Request",
-					"id": "42a91bea-40e4-48e5-a4e0-f358a5ed3aeb",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": []
-					},
-					"response": []
-				},
-				{
-					"name": "New Request",
-					"id": "04ad5e57-2060-498b-a164-c06f300f5b29",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": []
-					},
-					"response": []
+					"id": "02ef2903-7375-4892-b89d-e41565a71ac9"
 				}
 			],
 			"id": "0e21cb62-35b4-48ee-9504-f9c330559066"
