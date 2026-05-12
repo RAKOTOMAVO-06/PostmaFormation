@@ -199,23 +199,14 @@
 					"response": []
 				},
 				{
-					"name": "PATCH Copy",
+					"name": "Delete",
 					"id": "461de7b0-e0b5-40ac-b198-63f9fac1cd76",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "PATCH",
+						"method": "DELETE",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    {{title}}: \"voila\",\r\n    \"completed\": true,\r\n    \"userId\": 2\r\n    \r\n\r\n\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
 						"url": "{{base-url}}/todos/2"
 					},
 					"response": []
