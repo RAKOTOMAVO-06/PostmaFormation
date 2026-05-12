@@ -79,6 +79,28 @@
 					"response": []
 				},
 				{
+					"name": "Posts_modifier_partiel_Element",
+					"id": "42cd457e-7a7b-4777-aa4f-6af583fd1672",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{  \r\n    \"title\": \"Toto3.\",\r\n    \"body\": \" C'est bien ça.\",\r\n    \"views\": 4888,\r\n    \"userId\": 91\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base-url}}/Post/{{post_id}}"
+					},
+					"response": []
+				},
+				{
 					"name": "Postes_Recherche_ID_KO",
 					"id": "8bbd7f60-40ef-49a2-b3ea-d79e8e4b3d06",
 					"protocolProfileBehavior": {
