@@ -264,15 +264,15 @@
 	"auth": {
 		"type": "apikey",
 		"apikey": {
-			"value": "{{key_API}}",
-			"key": "X_API_KEY"
+			"key": "X_API_Key",
+			"value": "{{key_API_Meteo}}"
 		}
 	},
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "bd2b6ad3-1649-4b86-8127-bdb1bfe627c7",
+				"id": "cdf14441-ed33-485f-b1a7-2f2ce7efef30",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -284,7 +284,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "9d79d3f3-91c1-4a1e-bbd7-25d06685d61c",
+				"id": "b49369bc-55c1-4f02-bda6-13c6b6f37b8c",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -296,7 +296,7 @@
 	],
 	"variable": [
 		{
-			"key": "key_API",
+			"key": "key_API_Meteo",
 			"value": ""
 		}
 	]
