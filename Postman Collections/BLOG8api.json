@@ -191,6 +191,11 @@
 			"name": "Auth",
 			"item": [
 				{
+					"name": "Init",
+					"item": [],
+					"id": "02ef2903-7375-4892-b89d-e41565a71ac9"
+				},
+				{
 					"name": "Météo",
 					"id": "8b992e7c-30aa-40b8-b947-b7e2a09da641",
 					"protocolProfileBehavior": {
@@ -270,6 +275,42 @@
 				{
 					"name": "Donner_mafiche",
 					"id": "5cf79e85-ccfb-48ba-a1c4-6a8baafa3d75",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "667a5d09-458a-4810-b62a-7a2dd9324f01",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "42a91bea-40e4-48e5-a4e0-f358a5ed3aeb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "04ad5e57-2060-498b-a164-c06f300f5b29",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
