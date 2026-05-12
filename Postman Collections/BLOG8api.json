@@ -284,6 +284,42 @@
 						}
 					],
 					"id": "02ef2903-7375-4892-b89d-e41565a71ac9"
+				},
+				{
+					"name": "Gets",
+					"item": [],
+					"id": "887d44ec-f43a-47f5-973e-ce76f1116c96"
+				},
+				{
+					"name": "GetAllUsers Copy",
+					"id": "5111f937-e116-4c8c-8dbf-fcad09aebd65",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base-url}}/users?skip=50&limit=101",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"users"
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "50"
+								},
+								{
+									"key": "limit",
+									"value": "101"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "0e21cb62-35b4-48ee-9504-f9c330559066"
