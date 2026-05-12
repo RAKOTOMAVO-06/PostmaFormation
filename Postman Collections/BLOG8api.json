@@ -76,7 +76,7 @@
 			"name": "Todos",
 			"item": [
 				{
-					"name": "Getall",
+					"name": "Rechercher_TODO_ALL",
 					"id": "ed66907c-6e53-400d-ab1c-371cf5251aa1",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -93,7 +93,7 @@
 					"response": []
 				},
 				{
-					"name": "Post",
+					"name": "Crrer_TOTO_Utilisateur",
 					"id": "2a0b5c15-bccd-4017-8a30-f7838d13774a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
