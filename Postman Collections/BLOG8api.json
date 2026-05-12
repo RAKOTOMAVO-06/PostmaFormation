@@ -286,9 +286,14 @@
 					"id": "02ef2903-7375-4892-b89d-e41565a71ac9"
 				},
 				{
-					"name": "Gets",
+					"name": "Posts_CRud",
 					"item": [],
-					"id": "887d44ec-f43a-47f5-973e-ce76f1116c96"
+					"id": "569a5777-e5f1-4f79-a7f0-29e0f314070c"
+				},
+				{
+					"name": "Users_Crud",
+					"item": [],
+					"id": "f9a72a6c-9867-4417-9f32-1f198c2cc098"
 				},
 				{
 					"name": "GetAllUsers Copy",
