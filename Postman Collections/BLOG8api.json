@@ -139,6 +139,50 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    {{title}}: \"voila\",\r\n    \"completed\": true,\r\n    \"userId\": 2\r\n   \r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base-url}}/todos/2"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Copy",
+					"id": "2bfa610c-ef4b-4f48-a58b-167e6b416224",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    {{title}}: \"toto\",\r\n    \"completed\": false\r\n   \r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base-url}}/todos/2"
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH",
+					"id": "c65eeae3-7cc4-41f9-b64a-f1d7795ecba5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
@@ -164,18 +208,6 @@
 						"method": "GET",
 						"header": [],
 						"url": "{{base-url}}/todos/{{toto_id}}"
-					},
-					"response": []
-				},
-				{
-					"name": "New Request",
-					"id": "450fc271-7c6d-4259-9305-5f4d8efd2a10",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": []
 					},
 					"response": []
 				}
