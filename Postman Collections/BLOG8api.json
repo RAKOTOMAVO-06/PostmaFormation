@@ -35,6 +35,19 @@
 					"response": []
 				},
 				{
+					"name": "Posts_Post_Element",
+					"id": "138a73f2-3ca2-49a1-85fd-e844ecc13720",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{base-url}}/posts/{{post_id}}"
+					},
+					"response": []
+				},
+				{
 					"name": "Postes_Recherche_ID_KO",
 					"id": "8bbd7f60-40ef-49a2-b3ea-d79e8e4b3d06",
 					"protocolProfileBehavior": {
