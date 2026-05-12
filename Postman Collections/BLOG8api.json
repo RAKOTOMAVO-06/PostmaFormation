@@ -155,28 +155,6 @@
 					"response": []
 				},
 				{
-					"name": "PUT Copy",
-					"id": "2bfa610c-ef4b-4f48-a58b-167e6b416224",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "PATCH",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    {{title}}: \"toto\",\r\n    \"completed\": false\r\n   \r\n\r\n\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{base-url}}/todos/2"
-					},
-					"response": []
-				},
-				{
 					"name": "PATCH",
 					"id": "c65eeae3-7cc4-41f9-b64a-f1d7795ecba5",
 					"protocolProfileBehavior": {
