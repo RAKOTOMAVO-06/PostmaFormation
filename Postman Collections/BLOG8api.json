@@ -101,13 +101,31 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Hello World\",    \r\n    \"body\": \"Salut le monde\",\r\n    \"userId\": 1\r\n\r\n}"
+						},
+						"url": "{{base-url}}/todos"
 					},
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Post",
 					"id": "2a0b5c15-bccd-4017-8a30-f7838d13774a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{base-url}}/todos/{{toto_id}}"
+					},
+					"response": []
+				},
+				{
+					"name": "GetID",
+					"id": "eec00b3e-c435-4fe5-ab68-aca2f84f0b59",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
