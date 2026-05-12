@@ -385,6 +385,10 @@
 								"disableBodyPruning": true
 							},
 							"request": {
+								"auth": {
+									"type": "apikey",
+									"apikey": {}
+								},
 								"method": "GET",
 								"header": [],
 								"url": {
@@ -416,7 +420,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "3ddfcfe2-fd79-477a-8b4f-871dfe873953",
+										"id": "ce631bee-1597-4096-b2b0-999036977410",
 										"exec": [
 											"//vérifier que la requête\r",
 											"pm.test(\"Status code is 200\", function () {pm.response.to.have.status(200);});\r",
@@ -426,7 +430,7 @@
 											"// Sauvegarder dans lavariable d'environnement\r",
 											"pm.environment.set(\"Access_Token\", responsJson.accessToken);\r",
 											"console.log(\"Token d'accès enregistré : \\n\" + responsJson.accessToken);\r",
-											"console.log(\"voici ma variable\\n\"+pm.environment.get(\"base-url\")\r",
+											"console.log(\"voici ma variable\\n\"+pm.environment.get(\"base-url\"));\r",
 											""
 										],
 										"type": "text/javascript",
