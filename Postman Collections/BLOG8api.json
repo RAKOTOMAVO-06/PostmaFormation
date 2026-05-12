@@ -57,6 +57,28 @@
 					"response": []
 				},
 				{
+					"name": "Posts_modifier_tout_Element",
+					"id": "d5255b15-5941-42aa-bc31-6f89cdccf8ab",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{  \r\n    \"title\": \"Toto.\",\r\n    \"body\": \" C'est ça.\",\r\n    \"tags\": [\r\n        \"french\",\r\n        \"fiction\",\r\n        \"english\"\r\n    ],\r\n    \"reactions\": {\r\n        \"likes\": 856,\r\n        \"dislikes\": 32\r\n    },\r\n    \"views\": 4888,\r\n    \"userId\": 91\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base-url}}/Post/{{post_id}}"
+					},
+					"response": []
+				},
+				{
 					"name": "Postes_Recherche_ID_KO",
 					"id": "8bbd7f60-40ef-49a2-b3ea-d79e8e4b3d06",
 					"protocolProfileBehavior": {
