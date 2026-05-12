@@ -74,13 +74,38 @@
 						"url": "{{base-url}}/posts{{post_pad}}"
 					},
 					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "058f8eea-e6e2-49d9-8ce5-1183a35fadea",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "3e46143e-32c0-4c7b-b0af-1b768f577d42"
 		},
 		{
 			"name": "TODO",
-			"item": [],
+			"item": [
+				{
+					"name": "Getall",
+					"id": "ed66907c-6e53-400d-ab1c-371cf5251aa1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
 			"id": "ff828903-f111-40ce-8955-3f68be6b985b"
 		}
 	],
