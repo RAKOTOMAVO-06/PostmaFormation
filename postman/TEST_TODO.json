@@ -71,7 +71,8 @@
 							"// Test de l'id \r",
 							"pm.test(\"Todo id is correct\", function () { \r",
 							"        pm.expect(response.id).to.eql(pm.environment.get(\"todo_id\")); })\r",
-							"        \r",
+							"\r",
+							"     \r",
 							"\r",
 							""
 						],
