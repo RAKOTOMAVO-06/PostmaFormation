@@ -249,6 +249,40 @@
 			"item": [
 				{
 					"name": "Rechercher_TODO_tous_uUtilisateur",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "9b00f388-c46b-4cca-834f-8a7335a654e6",
+								"exec": [
+									"const response = pm.response.json();\r",
+									"const premier=response(0);\r",
+									"\r",
+									"//Test du Statut\r",
+									"pm.test(\"Todos-Test du Status \", function () {\r",
+									"    pm.response.to.have.status(200);})\r",
+									"\r",
+									"//Test du tableau\r",
+									"pm.test(\"Todos-Test tableau\", function () {\r",
+									"    pm.expect(response.todos).to.be.an('array');})  \r",
+									"\r",
+									"//Test du nombre d'éléments du tableau\r",
+									"pm.test(\"Todos-Test nombre d'éléments\", function () {\r",
+									"    pm.expect(response.todos.length).to.above(0);})  \r",
+									"\r",
+									"//Test du premier élément du tableau\r",
+									"pm.test(\"Todos-Test premier élément\", function () {\r",
+									"    pm.expect(premier.id).to.have.property(\"id\");\r",
+									"    pm.expect(premier.todo).to.have.property(\"title\");\r",
+									"    pm.expect(premier.completed).to.have.property(\"completed\");})\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
 					"id": "ed66907c-6e53-400d-ab1c-371cf5251aa1",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
