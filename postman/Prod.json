@@ -1,0 +1,76 @@
+{
+	"id": "62e4407b-2aec-49d7-9ea1-edc6c75d033b",
+	"name": "Prod",
+	"values": [
+		{
+			"key": "base-url",
+			"value": "https://dummyjson.com",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "userId",
+			"value": "6",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "post_id",
+			"value": "2",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "post_pad",
+			"value": "/add",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "todo",
+			"value": "todos",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "todo_id",
+			"value": 257,
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "title",
+			"value": "\"todo\"",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "Access_Token",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NTEsInVzZXJuYW1lIjoiZWxpYiIsImVtYWlsIjoiZWxpLmJlbm5ldHRAeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRWxpIiwibGFzdE5hbWUiOiJCZW5uZXR0IiwiZ2VuZGVyIjoibWFsZSIsImltYWdlIjoiaHR0cHM6Ly9kdW1teWpzb24uY29tL2ljb24vZWxpYi8xMjgiLCJpYXQiOjE3Nzg2NzM1MDUsImV4cCI6MTc3ODY3NzEwNX0.h1EYyU43U2WP-ad-uIIQ8BoEdKX0K_WvOclWcg24Ank",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "Limite_",
+			"value": "40",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "post_id_ko",
+			"value": "300",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "skip_",
+			"value": "20",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"color": null,
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2026-05-13T12:11:16.608Z",
+	"_postman_exported_using": "Postman/12.10.2"
+}
