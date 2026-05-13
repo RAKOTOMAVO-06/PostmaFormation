@@ -256,7 +256,7 @@
 								"id": "9b00f388-c46b-4cca-834f-8a7335a654e6",
 								"exec": [
 									"const response = pm.response.json();\r",
-									"const premier=response(0);\r",
+									"const premier=response[0];\r",
 									"\r",
 									"//Test du Statut\r",
 									"pm.test(\"Todos-Test du Status \", function () {\r",
@@ -290,10 +290,6 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"title\": \"Hello World\",    \r\n    \"body\": \"Salut le monde\",\r\n    \"userId\": 1\r\n\r\n}"
-						},
 						"url": "{{base-url}}/todos"
 					},
 					"response": []
