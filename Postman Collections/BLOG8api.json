@@ -317,28 +317,6 @@
 					"response": []
 				},
 				{
-					"name": "Creer_Utilisateur_Toto Copy",
-					"id": "9fd1d4c2-3e6a-40d6-b861-8ce533d32473",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    {{title}}: \"voila\",\r\n    \"completed\": true,\r\n    \"userId\": 2,\r\n    \"id\": 6\r\n\r\n\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{base-url}}/todos/{{post_pad}}"
-					},
-					"response": []
-				},
-				{
 					"name": "Mofifier_ Utilisateur_Tout_TODO_ID",
 					"id": "51b5accc-d3e4-4164-a269-ca00f6784a98",
 					"protocolProfileBehavior": {
@@ -357,28 +335,6 @@
 							}
 						},
 						"url": "{{base-url}}/todos/{{todo_id}}"
-					},
-					"response": []
-				},
-				{
-					"name": "Modifier_Partiel_Utilisateur_Todo",
-					"id": "c65eeae3-7cc4-41f9-b64a-f1d7795ecba5",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "PATCH",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    {{title}}: \"voila111\",\r\n    \"completed\": true,\r\n    \"userId\": 2\r\n    \r\n\r\n\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{base-url}}/todos/2"
 					},
 					"response": []
 				},
