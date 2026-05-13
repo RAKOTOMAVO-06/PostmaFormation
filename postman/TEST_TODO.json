@@ -1,0 +1,232 @@
+{
+	"info": {
+		"_postman_id": "a9ef4bd4-d0cf-454c-9ef9-5d3a07e0a630",
+		"name": "TEST_TODO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Creer_Utilisateur_Test_Toto",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c271fbea-8826-46b4-970e-0080041cdff6",
+						"exec": [
+							"const response = pm.response.json();\r",
+							"\r",
+							"//Statut\r",
+							"pm.test(\"Status code is 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"    });\r",
+							"\r",
+							"// exitence du champ id\r",
+							"pm.test(\"Check if 'id' field exists\", function () {\r",
+							"    pm.expect(response).to.have.property(\"id\");})\r",
+							"\r",
+							"//Récupération de l'id\r",
+							"pm.environment.set(\"todo_id\",response.id-1);\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"id": "9fd1d4c2-3e6a-40d6-b861-8ce533d32473",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    {{title}}: \"voila\",\r\n    \"completed\": false,\r\n    \"userId\": 2\r\n    \r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{base-url}}/todos/{{post_pad}}"
+			},
+			"response": []
+		},
+		{
+			"name": "Rechercher_Utilisateur_Test_Todo_Id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "620751c1-faaf-4538-a196-00a07f1315cc",
+						"exec": [
+							"const response = pm.response.json();\r",
+							"\r",
+							"// Test du Statut Recherche\r",
+							"pm.test(\"Status Code is 200\", function () { \r",
+							"    pm.response.to.have.status(200); })\r",
+							"\r",
+							"// Test de l'id \r",
+							"pm.test(\"Todo id is correct\", function () { \r",
+							"        pm.expect(response.id).to.eql(pm.environment.get(\"todo_id\")); })\r",
+							"        \r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"id": "1ddca956-4b73-46e2-bae1-044d9c0fdf04",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{base-url}}/todos/{{todo_id}}"
+			},
+			"response": []
+		},
+		{
+			"name": "Modifier_Partiel_Utilisateur_Test_Todo",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d36b6dbf-32bb-49ad-8785-2fc1c292f45a",
+						"exec": [
+							"const reponse=pm.response.json();\r",
+							"//Test to check if the response status code is 200.\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);})\r",
+							"\r",
+							"//Test de la modification du champ completed\r",
+							"pm.test(\"est de la modification du champ completed\", function () {\r",
+							"    pm.expect(reponse.completed).to.be.true;})\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"id": "d578409e-d629-440f-85c6-3a66b786e071",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"completed\": true\r\n \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{base-url}}/todos/{{todo_id}}"
+			},
+			"response": []
+		},
+		{
+			"name": "Supprimer_Utilisateur_Test_Todo",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6d7f7193-e4f3-4848-80d6-8e87ee7b35e9",
+						"exec": [
+							"const reponse=pm.response.json();\r",
+							"//Test to check if the response status code is 200\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"})\r",
+							"//if(pm.environment.name.to.)\r",
+							"/*\r",
+							"//Test to check if the response body contains the expected data\r",
+							"pm.test(\"Response body contains the expected data\", function () {\r",
+							"    pm.expect(reponse).to.have.property('id', pm.environment.get('todo_id'));})\r",
+							"\r",
+							"//Test de suppression\r",
+							"pm.test(\"Todo is marked as deleted\", function () {\r",
+							"    pm.expect(reponse).to.have.property('isDeleted', true);\r",
+							"    });\r",
+							"*/"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"id": "27c7b82a-3674-4f7c-afd3-960bdaf706e5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "{{base-url}}/todos/{{todo_id}}"
+			},
+			"response": []
+		},
+		{
+			"name": "Rechercher_Utilisateur_Test_Todo_1",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "b777b398-37e2-449e-846d-7f40c8945d80",
+						"exec": [
+							"// Mettre à jour l'ID de la tâche pour la prochaine requête\r",
+							"pm.environment.set(\"todo_id\", pm.environment.get(\"todo_id\")+1); "
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "c52a541e-5ed2-46a2-be56-d22d6e6aaac9",
+						"exec": [
+							"const reponse=pm.response.json();\r",
+							"//test if the reponse status code is 200\r",
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"    });\r",
+							"    /*\r",
+							"//test if the reponse body contains the correct message\r",
+							"pm.test(\"Response body contains the correct message\", function () {\r",
+							"    pm.expect(reponse.message).to.eql(\"Todo */"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"id": "eec00b3e-c435-4fe5-ab68-aca2f84f0b59",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{base-url}}/todos/{{todo_id}}"
+			},
+			"response": []
+		}
+	]
+}
