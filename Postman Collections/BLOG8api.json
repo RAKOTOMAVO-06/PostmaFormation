@@ -352,19 +352,6 @@
 					"response": []
 				},
 				{
-					"name": "Rechercher_Utilisateur_Todo_Id",
-					"id": "eec00b3e-c435-4fe5-ab68-aca2f84f0b59",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": "{{base-url}}/todos/{{todo_id}}"
-					},
-					"response": []
-				},
-				{
 					"name": "Supprimer_Utilisateur_Todo_Id_KO",
 					"id": "4584ea96-96f1-4692-ba39-9b800916cfe2",
 					"protocolProfileBehavior": {
@@ -374,6 +361,28 @@
 						"method": "DELETE",
 						"header": [],
 						"url": "{{base-url}}/todos/8000"
+					},
+					"response": []
+				},
+				{
+					"name": "Modifier_Partiel_Utilisateur_Todo",
+					"id": "c65eeae3-7cc4-41f9-b64a-f1d7795ecba5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    {{title}}: \"voila111\",\r\n    \"completed\": true,\r\n    \"userId\": 2\r\n    \r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base-url}}/todos/2"
 					},
 					"response": []
 				}
